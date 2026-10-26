@@ -49,8 +49,10 @@ def main():
         print("3. Time Rescue")
         print("4. Exit")
 
-        choice = input("\nEnter 1, 2, 3 or 4: ").strip()
-
+        choice= input("Choose an option: ").strip()
+        if choice not in ["1", "2", "3", "4"]:
+            print("Invalid choice. Please enter a number from 1 to 4.")
+            continue
         if choice == "4":
             print("Good luck! One step at a time.")
             break
